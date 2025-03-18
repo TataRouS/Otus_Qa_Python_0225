@@ -14,8 +14,3 @@ class Rectangle(Figure):
 
     def get_perimeter(self):
         return (self.a + self.b) * 2
-
-    def add_area(self, f):
-        if not isinstance(f, Figure):
-            raise ValueError("Параметр f не является фигурой!")
-        return self.get_area() + f.get_area()

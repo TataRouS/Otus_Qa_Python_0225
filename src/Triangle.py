@@ -18,8 +18,3 @@ class Triangle(Figure):
 
     def get_perimeter(self):
         return self.a + self.b + self.c
-
-    def add_area(self, f):
-        if not isinstance(f, Figure):
-            raise ValueError("Параметр f не является фигурой!")
-        return self.get_area() + f.get_area()
