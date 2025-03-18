@@ -1,4 +1,4 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 # Абстрактный класс
@@ -6,6 +6,7 @@ class Figure(ABC):
     def __init__(self):
         pass  # Ничего не делаем, метод - абстрактный
 
+    @abstractmethod
     def get_perimeter(self):
         pass  # Ничего не делаем, метод - абстрактный
 
