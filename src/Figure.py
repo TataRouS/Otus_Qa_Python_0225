@@ -14,3 +14,6 @@ class Figure(ABC):
         if not isinstance(f, Figure):
             raise ValueError("Параметр f не является фигурой!")
         return self.get_area() + f.get_area()
+
+    def get_area():
+        pass  # Ничего не делаем, метод - абстрактный
