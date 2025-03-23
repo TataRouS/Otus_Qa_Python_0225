@@ -6,7 +6,7 @@ def test_rectangle_area_positive(create_rectangle, type_of_number):
     side_a, side_b  = create_rectangle(type_of_number=type_of_number)
     print(side_a, side_b)
     r = Rectangle(side_a, side_b)
-    assert r.get_area == side_a*side_b
+    assert r.get_area() == side_a*side_b
 
 
 @pytest.mark.parametrize(

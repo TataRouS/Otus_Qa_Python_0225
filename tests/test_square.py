@@ -6,7 +6,7 @@ def test_square_area_positive(create_square, type_of_number):
     side_a = create_square(type_of_number=type_of_number)
     print(side_a)
     square = Square(side_a)
-    assert square.get_area == side_a*side_a
+    assert square.get_area() == side_a*side_a
 
 
 @pytest.mark.parametrize(

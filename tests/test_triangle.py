@@ -9,7 +9,7 @@ def test_triangle_area_positive(create_triangle, type_of_number):
     print(side_a, side_b, side_c)
     triangle = Triangle(side_a, side_b, side_c)
     p = triangle.get_perimeter()
-    assert triangle.get_area == math.sqrt(p * (p - side_a) * (p - side_b) * (p - side_c))
+    assert triangle.get_area() == math.sqrt(p * (p - side_a) * (p - side_b) * (p - side_c))
 
 
 @pytest.mark.parametrize(

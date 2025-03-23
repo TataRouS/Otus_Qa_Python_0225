@@ -19,7 +19,7 @@ def create_figure():
             return Triangle(5, 5, 5)
         else:
             raise ValueError(f"type must be figure")
-    yield _wrapper()
+    yield _wrapper
 
 @pytest.fixture()
 def create_square():
@@ -30,7 +30,7 @@ def create_square():
             return 3.5
         else:
             raise ValueError(f"sides must be integer or float")
-    yield _wrapper()
+    yield _wrapper
 
 @pytest.fixture()
 def create_triangle():
@@ -42,7 +42,7 @@ def create_triangle():
         else:
             raise ValueError(f"sides must be integer or float")
 
-    yield _wrapper()
+    yield _wrapper
 
 
 @pytest.fixture()
@@ -55,7 +55,7 @@ def create_circle():
         else:
             raise ValueError(f"sides must be integer or float")
 
-    yield _wrapper()
+    yield _wrapper
 
 @pytest.fixture()
 def create_rectangle():
@@ -67,4 +67,4 @@ def create_rectangle():
         else:
             raise ValueError(f"sides must be integer or float")
 
-    yield _wrapper()
+    yield _wrapper

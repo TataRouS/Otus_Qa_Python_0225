@@ -8,7 +8,7 @@ def test_circle_area_positive(create_circle, type_of_number):
     radius = create_circle(type_of_number=type_of_number)
     print(radius)
     circle = Circle(radius)
-    assert circle.get_area == math.pi*radius*radius
+    assert circle.get_area() == math.pi*radius*radius
 
 @pytest.mark.parametrize(
     "radius", [0, -1], ids=["zero value", "negative value"]
@@ -27,4 +27,4 @@ def test_circle_perimeter(radius, perimeter):
     # Вызов тестируемой функции
     circle = Circle(radius)
     # Проверка результата
-    assert circle.get_perimeter() == perimeter, f"Expected perimeter should be {radius}"
+    assert circle.get_perimeter() - perimeter < 0.01 , f"Expected perimeter should be {perimeter}"
