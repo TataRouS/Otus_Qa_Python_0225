@@ -1,5 +1,4 @@
 import os.path
-from fileinput import filename
 
 FILES_DIR = os.path.dirname(__file__)
 
@@ -10,3 +9,4 @@ def get_path(filename: str):
 
 CSV_FILE_PATH = get_path(filename="books.csv")
 JSON_FILE_PATH = get_path(filename="users.json")
+RESULT_FILE_PATH = get_path(filename="result.json")
